@@ -28,9 +28,9 @@ if (!empty($_POST))
 	if (empty($errors))
 	{
 		$content_student = "\n" . $name;
-		file_put_contents("data/students.txt" , $name, FILE_APPEND);
+		file_put_contents("data/students.txt" , $content_student, FILE_APPEND);
 		$content_scores = "\n" . $scores;
-		file_put_contents("data/scores.txt" , $scores, FILE_APPEND);
+		file_put_contents("data/scores.txt" , $content_scores, FILE_APPEND);
 
 		header('Location: index.php');
 		exit;
